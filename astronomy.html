@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>astronomy</title>
+		<meta name="author" content="Carlos" />
+		<!-- Date: 2016-06-08 -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/headerandfooter.css" />
+    	<link rel="stylesheet" href="css/astronomy.css"/>
+        
+        <script type="text/javascript" language="JavaScript" src="js/jquery-2.2.3.js"></script>
+        <script src="js/angular-1.2.29/angular.min.js"></script>
+		<script src="js/angular-1.2.29/i18n/angular-locale_es-mx.js"></script>
+		<script src="js/bootstrap.js"></script>
+        <script src="js/headerandfooter.js"></script>
+        <script src="js/astronomy.js"></script>
+	</head>
+	<body ng-app>
+		<div class="">
+	        <div ng-include="'header_estandar.html'">
+	        	<header_estabdar></header_estabdar>
+	     	</div>
+	    </div>
+		
+		<br />
+		<div ng-controller="controladorAstronomyList">
+		<div class="row-eq-height" id="allinfocontainer">
+			<div class="container">	
+				<div >
+					<div id="pruebaindex" ng-init="getinfo()"></div>
+					<div id="newcontainer" ng-repeat="astronomydata in astronomydata | orderBy:'-astronomyInfoID' | limitTo:returnlimit()">
+							<div class="form-horizontal">
+								<a href="astronomyinfo.html?infoTittle={{astronomydata.imagenewurls}}" >
+									<div class="col-xs-12 border-list">
+										<div class="col-xs-6 col-sm-5 col-md-4 col-lg-3 ">
+											<img id="imageBlock" src="{{astronomydata.imageurl}}"  class="img-responsive" />
+										</div>
+										<div class="col-xs-6 col-sm-7 col-md-8 col-lg-9 ">
+											
+											<div class="form-group">
+												<label class="control-label" id="tittleBlock">{{astronomydata.imageTittle}}</label>
+												<p class="row-eq-height panel-default text-justify" disabled="" id="sipnosisBlock" >
+													{{astronomydata.imageInfo}}{{astronomydata.astronomyInfoID}}
+												</p>
+												<span class=""></span>
+											</div>
+										</div> 
+									</div>
+								</a>
+							</div>
+						</div>			
+				</div>
+				
+			</div>
+		</div>
+
+		<br />
+		<div class="row">
+			<div class="container">
+				<div class="col-xs-12">
+					<a href="#" class="btn btn-info col-xs-12" id="loadMoreButton" value="loadMoreButton" ng-click="addlmit()">show more</a>
+				</div>
+			</div>
+		</div>
+		<br/>
+		</div>
+		<div class="row"></div>
+       
+        <div class="row">
+	        <div ng-include="'footer_estandar.html'" >
+	        	<footer_estandar ></footer_estandar>
+	        </div>  
+        </div>    	
+	</body>
+</html>
+
+Un ejemplo, con jquery haremos una consulta, con boostrap esta el formato,
+													y suando angular ng-reapet llenanaremos una lista dianmica, con los filtros de angular
+													presentaremos con sus ids inversos, y con otro filtro hasta 10,
+													con el boton añadiremos 10 más, así hasta que la base este completamente consultada.

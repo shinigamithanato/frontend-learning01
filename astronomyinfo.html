@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>astronomyinfo</title>
+		<meta name="author" content="Carlos" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/headerandfooter.css" />
+        <link rel="stylesheet" href="css/astronomyinfo.css"/>
+        
+        <script type="text/javascript" language="JavaScript" src="js/jquery-2.2.3.js"></script>
+        <script src="js/angular-1.2.29/angular.min.js"></script>
+		<script src="js/angular-1.2.29/i18n/angular-locale_es-mx.js"></script>
+		<script src="js/bootstrap.js"></script>
+        <script src="js/headerandfooter.js"></script>
+        <script src="js/astronomyinfo.js"></script>
+		<!-- Date: 2016-06-16 -->
+	</head>
+	<body ng-app>
+		
+		<div class="">
+	        <div ng-include="'header_estandar.html'">
+	        	<header_estabdar></header_estabdar>
+	     	</div>
+	    </div>
+		<br />
+		<div class="row">
+			<div class="">
+				<div class="container">
+					<div class="col-xs-offset-4 col-xs-4">
+						<h4 class="container" id="tittle">Ejemplo</h4>
+					</div>
+					<br />
+					<div class="col-xs-offset-3 col-xs-6">
+						<img id"image" class="img-responsive" src="images/australia_sky.jpg" width="500" />
+					</div>
+					<br />
+					<div class="">
+						<p class="bold col-xs-offset-3 col-xs-5">Detalles: </p>
+						<p id="info" class="text-justify col-xs-offset-3 col-xs-6">
+							Esto es solo un ejemplo
+						</p>
+					</div>
+				
+				</div>
+			</div>
+		</div>
+		<br />
+		<div class="row"></div>
+       
+        <div class="row">
+	        <div ng-include="'footer_estandar.html'" >
+	        	<footer_estandar ></footer_estandar>
+	        </div>  
+        </div>    	
+
+	</body>
+</html>
+

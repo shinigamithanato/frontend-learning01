@@ -1,0 +1,26 @@
+#presentationCircle{
+	border-bottom: 2px solid;
+	border-bottom-color: #000000;
+}
+
+.row-eq-height {
+  /*display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;*/
+}
+
+.info-index-page{
+	font-size: 20px;
+}
+
+.pruebaTransparencia{
+	background: rgba(0,0,255,0);
+	transition: 0s;
+	transition: background-color: #0000FF;
+}
+
+.pruebaTransparencia:hover{
+	background: rgba(0,0,255,0.3)
+}
+

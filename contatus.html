@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>contatus</title>
+		<meta name="author" content="Carlos" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/headerandfooter.css" />
+        <link rel="stylesheet" href="css/contatus.css" />
+        
+        <script type="text/javascript" language="JavaScript" src="js/jquery-2.2.3.js"></script>
+        <script src="js/angular-1.2.29/angular.min.js"></script>
+		<script src="js/angular-1.2.29/i18n/angular-locale_es-mx.js"></script>
+		<script src="js/bootstrap.js"></script>
+        <script src="js/headerandfooter.js"></script>
+ 		<script src="js/contatus.js"></script>
+		<!-- Date: 2016-06-07 -->
+	</head>
+	<body ng-app>
+		<div class="">
+	        <div ng-include="'header_estandar.html'">
+	        	<header_estabdar></header_estabdar>
+	     	</div>
+	    </div>
+		
+		
+		
+		</br>
+		
+		<div class="row">
+			<div class="container">
+				<p class="text-justify">
+					Si tienes una queja, alguna critica de como esta desarrollada esta web (sin llegar a insultos),
+					sugerencias de como mejorar secciones, o alguna idea que debaría agregar para aprender más programación web
+					contacta conmigo por favor, mandame tu mensaje.
+				</p>
+			</div>
+		</div>
+		<div class="row"><div class="col-xs-12"><div class="divition-line"></div></div></div>
+		</br>
+		
+		<div class="row">
+			<div class="container">
+				<form class="form-horizontal" id="contactForm">
+					
+					<div class="form-group">			
+						<label class="control-label col-xs-12 col-sm-12 col-md-2 col-lg-2">Nombre:</label>
+						<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
+							<input type="text" class="form-control" placeholder="Name" id="inputName" maxlength="50" required=""/>
+						</div>		
+					</div>
+					
+					<div class="form-group">
+						<label class="control-label col-xs-12 col-sm-12 col-md-2 col-lg-2">Correo:</label>
+						<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
+							<input type="email" class="form-control" placeholder="E-mail" id="inputMail" maxlength="60" required="" />
+						</div>	
+					</div>
+					
+					<div class="form-group">
+						<label class="control-label col-xs-12 col-sm-12 col-md-2 col-lg-2">Mensaje:</label>
+						<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
+							<textarea id="inputMessage" class="form-control" placeholdeer="Message max 500 char" required=""></textarea>
+						</div>	
+					</div>
+					
+					<div class="form-group">
+						<button type="submit" value="submit" id="submitButton" class="btn btn-default center-block">Submit</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		
+		<div class="row"><div class="col-xs-12"><div class="divition-line"></div></div></div>
+       
+        <div class="row footer">
+	        <div ng-include="'footer_estandar.html'" >
+	        	<footer_estandar></footer_estandar>
+	        </div>  
+        </div>
+	</body>
+</html>
+

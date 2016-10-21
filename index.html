@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="">
+		<meta name="author" content="Carlos">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+        <title>New Web Project</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/headerandfooter.css" />
+        <link rel="stylesheet" href="css/index.css" />
+        
+        <script type="text/javascript" language="JavaScript" src="js/jquery-2.2.3.js"></script>
+        <script src="js/angular-1.2.29/angular.min.js"></script>
+		<script src="js/angular-1.2.29/i18n/angular-locale_es-mx.js"></script>
+		<script src="js/bootstrap.js"></script>
+        <script src="js/headerandfooter.js"></script>
+        <script src="js/index.js"></script>
+    </head>
+    
+    <body ng-app>
+        
+        <div class="">
+	        <div ng-include="'header_estandar.html'">
+	        	<header_estabdar></header_estabdar>
+	     	</div>
+	    </div>
+		
+		<div class="row"><div class="col-xs-12"><div class="divition-line"></div></div></div>
+		
+	    
+	    <div>
+	    <div class="col-md-6 col-md-push-3 col-sm-6 col-sm-push-3">
+	        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+		    <ol class="carousel-indicators">
+		      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		      <li data-target="#myCarousel" data-slide-to="1"></li>
+		      <li data-target="#myCarousel" data-slide-to="2"></li>
+		      
+		    </ol>
+	
+    <!-- Wrapper for slides -->
+		    <div class="carousel-inner" role="listbox">
+			      <div class="item active col-md-offset-2">
+			        	<img src="images/carruselimages/15665979044_41f01d051f_z-580x420.jpg" alt="Chania" height="350px" width="350px">
+			      		<div class="carousel-caption col-md-push-3">
+			      			<a class="btn btn-info" value="Ver Galeria" href="galley.html">Ver Galeria</a>
+			      		</div>
+			      </div>
+			
+			      <div class="item col-md-offset-2">
+			      	<a href="https://www.facebook.com/BulbasaurNumero1/" >
+			        	<img src="images/carruselimages/pokemon___bulbasaur_secret_garden_by_sa_dui-d52umr2.jpg" alt="Chania"  height="350px" width="350px">
+			      	</a>
+			      </div>
+			    
+			      <div class="item col-md-offset-2">
+			        <img src="images/carruselimages/saint_seiya_corazon.jpg" height="300px" width="269px">
+			        <div class="carousel-caption">
+			        	<p class="center">
+			        		Esto solo es una prueba para el carrusel, solo usamos esta imagen, es uno de mis gustos
+			        	</p>
+			        </div>
+			      </div>
+		    </div>
+				
+				    <!-- Left and right controls -->
+		    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+		      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		      <span class="sr-only">Previous</span>
+		    </a>
+		    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+		      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		      <span class="sr-only">Next</span>
+		    </a>
+		  </div>
+	      </div>
+	    
+	    <div class="row"><div class="col-xs-12"><div class="divition-line"></div></div></div>	
+	    <div class="form-group row"><span class="col-xs-12"><br /><br/></span></div> 
+	       
+	    <div id="presentationCircle" class="container-fluid">
+	    	<div class="row row-eq-height "> <!--row-eq-height  es una clase custom en index.css, sirve para que boostrap haga todas los columnas d ela misma altura, igual a la mas alta
+	    									Solo disponible en ciertos navegadores, rompe responsabilidad-->	
+	    		<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4  panel pruebaTransparencia" id="">
+	    			<img class="img-circle img-responsive img-thumbnail center-block" src="images/samus.jpg" width="80%" />
+	    			<p>Uno de mis gustos, son los videojuegos, aqui podras ver una lista de algunos de ellos,</p>
+	    			<button class="btn btn-info center-block" id="botonIrGames">Ir</button>
+	    		</div>
+	    		<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 panel pruebaTransparencia">
+	    			<img class="img-circle img-responsive center-block" src="images/todoslosyugis.jpg" width="80%"/>
+	    			<p>Hay muchos gustos, otro es el yugioh, solo es por pasatiempo, no me lo tomo enserio, el boton lleva a otros de mis gustos, diferentes a los que ves aqui.</p>
+	    			<button class="btn btn-info center-block" id="botonIrYugioh">Ir</button>
+	    		</div>
+	    		<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4  panel pruebaTransparencia">
+	    			<img class=" img-circle img-responsive center-block" src="images/australia_sky.jpg" width="80%"/>
+	    			<p>Esto tal vezx se cambie a una expresion de angular, con un json, para practicar, informacion contante sera
+	    				Esto redirigira, a una pagina con una lista de imagenes, que estaran así: imagen a la izquierda el titulo, y abajo una breve descripcion.
+	    				Si le da click, debe ir una paagina con el titulo arriba, la imagen en grande abajo, y abajo de ella e titulo, abajo a quien pertenece.
+	    				La lista debe ser 10 elementos y se actualiza con otros 10 cada que se le da a un boton.
+	    				(Investigar posibilidad de estos 2 últimos con angular/jquery) 
+	    			</p>
+	    			<a class="btn btn-info center-block" id="botnIrAstronomia" href="astronomy.html">Ir</a>
+	    	   </div>
+	    	</div>    
+	    		
+	    </div>
+	    
+	    <div class="row"><div class="col-xs-12"><div class="divition-line"></div></div></div>
+	    
+	    <div class="row">
+		    <div class="col-xs-12">
+		    	<p class="info-index-page ">
+		    		Hola mundo, Esta es la pagina principal, la mayoria es html y css puro, es solo para motivos de aprendisaje
+		    	</p>
+	        </div>
+        </div>
+       </div>
+       
+      
+       <div class="row"></div>
+       
+        <div class="row">
+	        <div ng-include="'footer_estandar.html'" >
+	        	<footer_estandar ></footer_estandar>
+	        </div>  
+        </div>    	
+    	
+    </body>
+</html>

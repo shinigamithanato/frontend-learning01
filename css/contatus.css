@@ -1,0 +1,10 @@
+body{
+	height: 100%
+}
+
+body #footerControler{
+	padding-top: 60px;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}

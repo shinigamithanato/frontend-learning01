@@ -1,0 +1,48 @@
+<header class="container-fluid ">
+	        	<div class="row">
+	        		<div class="form-inline">
+		        	<div class="hidden-xs hidden-sm col-md-1 col-lg-1">
+		        		<a href="index.html"  ><img src="images/logo.jpg" height="40px" width="40px"/></a>
+		        	</div>
+			        	
+			        <div class="form-group col-md-9 col-lg-9 col-xs-12 col-sm-12">
+				        <div id="searchForm" class="input-group col-md-9 col-lg-9 col-xs-12 col-sm-12">
+					        <input class="form-control col-lg-8 col-md-8" type="text" id="search_input" placeholder="search"/>
+					        <span class="input-group-btn">
+					        	<button class="btn btn-default glyphicon glyphicon-search" id="search_button" type="button" title="search"></button>
+				        	</span>   	     	
+		        		</div>
+	        		</div>	
+	        		<div class="list-group form-group col-lg-2 col-md-2 hidden-sm hidden-xs">
+			        		<ul id="socialNerwork" class="">
+			        			<li class=""><a target="_blank" title="find us on Facebook" href="https://www.facebook.com/josecarlos.zaletassoto"><img alt="follow me on facebook" src="images/facebook_30x30.png" border=0></a></li>
+			        			<li class=""><a target="_blank" title="find us on Twitter" href="https://mx.linkedin.com/in/josé-carlos-zaletas-soto-a480a2101"><img alt="follow me on facebook" src="images/twitter_30x30.png" border=0></a></li>
+			        			<li class=""><a target="_blank" title="find us on google+" href="https://plus.google.com/u/0/112692189865899444735"><img alt="follow me on facebook" src="images/gplus-32.png" border=0></a></li>
+			        		</ul>
+			        </div> 
+			        </div>
+			     </div> 
+</header>
+
+<div id="menudivbar">
+	<div id="listmenubar" class="container-fluid hidden-xs">		
+			<ul class="list-inline" id="menubarul"> 
+				<li class=""><a class="btn btn-info" href="index.html">home</a></li>
+				<li class=""><a class="btn btn-info" href="about.html">Aceerca de mi</a></li>
+				<li class=""><a class="btn btn-info" href="contatus.html">Contacta conmigo</a></li>
+			</ul>	
+	</div>
+	<div class="container-fluid hidden-md hidden-lg hidden-sm" ng-controller="controlarClikmenu">
+		<div class="col-xs-push-11"><a href="" class="glyphicon glyphicon-stats" ng-click="showHiddenMenu(returnmenuStatus())"></a></div>
+		<div id="menuSmalldivece" ng-show="returnmenuStatus()">
+			<ul class="list-group list-unstyled">
+				<li class=""><a class="btn btn-info" href="index.html">home</a></li>
+				<li class=""><a class="btn btn-info" href="about.html">Aceerca de mi</a></li>
+				<li class=""><a class="btn btn-info" href="contatus.html">Contacta conmigo</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+<div class="row"><div class="col-xs-12"><div class="divition-line"></div></div></div>

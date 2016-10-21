@@ -1,0 +1,26 @@
+#about-Me-Box{
+	border: 1px solid #000000;
+}
+#tittleAbout{
+	border-bottom: 1px solid #000000;
+}
+
+#descriptionBox{
+	font-family: Arial;
+	font-size: 12px;
+}
+p{
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+body{
+	height: 100%
+}
+
+body #footerControler{
+	padding-top: 60px;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}

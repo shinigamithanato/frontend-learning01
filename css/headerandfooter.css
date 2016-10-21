@@ -1,0 +1,34 @@
+body{
+	height: 100%;
+}
+header {
+    background: #006666;
+    padding: 4px;
+}
+
+footer{
+	background: #006666;
+}
+#socialNerwork li{
+	display: inline;
+}
+ 
+
+#menudivbar{
+	background: #31B0D5;
+}
+
+#menubarul{
+	margin-bottom: 0px;
+}
+
+.divition-line{
+	border-bottom: 1px solid;
+	border-bottom-color: #000000;
+}
+
+body #footerControler{
+	position: relative;
+	width: 100%;
+	bottom: 0;
+}

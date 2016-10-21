@@ -1,0 +1,11 @@
+.border-gallery{
+	border: 1px dotted;
+	border-color: #000000;
+}
+#galleryContainer{
+	width: 100%;
+	
+}
+#galleryDescription{
+	font-size: 16px;
+}
