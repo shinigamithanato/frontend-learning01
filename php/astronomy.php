@@ -6,9 +6,9 @@
 ?>
 <?php
 
-	$servidor="127.0.0.1";
-	$usuario="root";
-	$password="";
+	$servidor="";
+	$usuario="";
+	$password=""; //user, server, and password are in the server
 	$bd="cincalamildos";
 	$conexion = mysqli_connect($servidor, $usuario, $password, $bd); 
 	
